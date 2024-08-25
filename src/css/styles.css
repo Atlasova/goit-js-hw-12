@@ -132,6 +132,36 @@ input[name='query']:placeholder-shown {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
+/* Load More Button styles */
+.hidden {
+  display: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load-more-btn {
+  width: 125px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-style: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.load-more-btn:hover,
+.load-more-btn:focus {
+  background: #6c8cff;
+}
+
 /* ----- Loader styles ----- */
 .loader {
   width: 48px;
@@ -163,9 +193,7 @@ input[name='query']:placeholder-shown {
   animation: rotationBack 1s linear infinite;
   transform-origin: center center;
 }
-.is-hidden {
-  display: none;
-}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -181,4 +209,7 @@ input[name='query']:placeholder-shown {
   100% {
     transform: rotate(-360deg);
   }
+}
+.is-hidden {
+  display: none;
 }
